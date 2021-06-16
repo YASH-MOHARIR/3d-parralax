@@ -1,0 +1,143 @@
+* {
+  font-family: roboto;
+}
+
+body {
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  height: 90vh;
+  width: 35vw;
+  margin: auto;
+  margin-top: 25px;
+  padding-top: 10px;
+  border-radius: 35px;
+  -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+}
+
+.card .card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 100%;
+  margin-top: 5px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.card .card-content .circle-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.card .card-content .circle-img .circle-bg {
+  position: absolute;
+  z-index: 0;
+  display: inline-block;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(245, 70, 66, 0.75)), to(rgba(8, 83, 156, 0.75)));
+  background: linear-gradient(to right, rgba(245, 70, 66, 0.75), rgba(8, 83, 156, 0.75));
+}
+
+.card .card-content .circle-img img {
+  z-index: 3;
+  width: 20rem;
+}
+
+.card .card-content .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.card .card-content .sizes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.card .card-content .sizes .size-select {
+  cursor: pointer;
+  width: 20%;
+  padding: 8px 10px;
+  font-weight: 500;
+  border: none;
+  border-radius: 15px;
+  background-color: transparent;
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2), 0px 0px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2), 0px 0px 20px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.card .card-content .sizes .size-select:hover {
+  background-color: rgba(128, 128, 128, 0.644);
+}
+
+.card .card-content .sizes .selected {
+  background-color: gray;
+  color: white;
+}
+
+.card .card-content .purchase {
+  text-align: center;
+}
+
+.card .card-content .purchase .purchase-btn {
+  cursor: pointer;
+  color: white;
+  font-size: 1.2rem;
+  width: 80%;
+  padding: 15px 10px;
+  border: none;
+  border-radius: 25px;
+  background-color: rgba(245, 70, 66, 0.75);
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2), 0px 0px 40px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2), 0px 0px 40px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.card .card-content .purchase .purchase-btn:hover {
+  background-color: #f54542;
+}
+/*# sourceMappingURL=style.css.map */
